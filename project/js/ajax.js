@@ -5,8 +5,6 @@ function Ajax(options){
         throw new Error("不能没有URL,不然ajax发给谁?")
     }
 
-
-
     /* 参数默认值 */
     let defaultInfo = {
         type:"GET",  //请求的方式,默认值为get
@@ -16,9 +14,6 @@ function Ajax(options){
         success:function(){}, //当请求数据成功,执行这个函数
         dataType:"string" //string,json
     }
-
-
-    
     /* 将options的赋值给defaultInfo */
     for(let key in options){
         defaultInfo[key] = options[key]
