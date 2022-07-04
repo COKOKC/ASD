@@ -1,0 +1,1 @@
+﻿select * from book where bid = 78;
